@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 5px;
+    display: block;
+    padding: 5px;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px 2px #D8D8D8;
+}
+
+.nav-bar li{
+    padding:0 10px;
+}
+.about li{
+    float: left;
+}
+
+.nav-bar li:hover{
+    background-color: #CCCCCC;
+}
+
+
+/* FOR HERO-BG */
+.big-container{
+    width: 95%;
+    margin: auto;
+}
+
+.img-pix{
+    position: relative;
+}
+
+.br-archi{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.br-archi h2{
+    color: #fff;
+    letter-spacing: 6px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.br-archi .span{
+    background-color: #000;
+    padding: 12px;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 700;
+    opacity: 0.8;
+}
+
+/* FOR PROJECT */
+.project h2{
+    padding: 50px 0 15px 0;
+    border-bottom: 1px solid #f1eeee;
+    font-weight: 400;
+}
+
+.project-row1{
+    padding-top: 40px;
+    margin-bottom: 12px;
+}
+
+.summer-house, .brick-house, .renovated, .barn-house{
+    position: relative;
+}
+
+.sum-house, .bri-house, .renovate, .b-house{
+    position: absolute;
+    top: 0;
+    background-color: #000;
+}
+
+.sum-house p, .bri-house p, .renovate p, .b-house p{
+    color: #fff;
+    padding: 8px;
+}
+
+.row{
+    width: 24%;
+}
+
+.project-img, .about-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.naming{
+    width: 24%;
+}
+
+.naming img{
+    filter: grayscale(0.8);
+}
+
+.about-project h2{
+    font-weight: 400;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f1eeee;
+}
+
+.about-project p{
+    word-spacing: 4px;
+    margin-top: 30px;
+}
+
+.about-content{
+    margin-top: 50px;
+}
+
+.about-content h2{
+    font-weight: 400;
+}
+
+.about-content p{
+    margin-bottom: 10px;
+}
+
+.about-content h3{
+    font-size: 16px;
+    margin: 10px 0;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+.about-content input{
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    margin-top: 10px;
+}
+
+.about-content input:hover{
+    background-color: #CCCCCC;
+}
+
+.about-container{
+    padding-top: 50px;
+}
+
+/* FOR FORM-CONTAINER */
+.form-container input[type=text], .form-container input[type=email]{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.form-control{
+    margin-bottom: 8px;
+}
+
+.form-container p{
+    margin: 15px 0;
+}
+
+.form-container h2{
+    padding: 50px 0 20px 0;
+    border-bottom: 1px solid #f1eeee;
+    font-weight: 400;
+}
+
+.form-container input[type=submit]{
+    padding: 8px;
+    margin: 20px 0;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+}
+
+.form-container input[type=submit]:hover{
+    background-color: #CCCCCC;
+    color: #000;
+}
+
+/* FOOTER */
+footer{
+    background-color: #000;
+    padding: 30px;
+    margin-top: 10px;
+}
+
+footer p{
+    text-align: center;
+    color: #fff;
+}
+
+footer a{
+    color: #fff;
+}
+
+footer a:hover{
+    color: #4CAF43;
+}
+
+/* FOR TABLET */
+@media screen  and (max-width: 768px) {
+    .project-img, .about-content{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .row, .naming{
+        width: 49%;
+    }
+}
+
+/* FOR MOBILE */
+@media screen  and (max-width: 600px) {
+    .about{
+        display: none;
+    }
+
+    .project-img{
+        flex-direction:column ;
+        gap: 10px;
+    }
+    .row, .naming{
+        width: 100%;
+    }
+    .br-archi .hidden{
+        display: none;
+    }
+}
